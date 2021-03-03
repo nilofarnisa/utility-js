@@ -14,4 +14,8 @@ describe('Map', () => {
         expect(user.mapFunction([1,2,3],'cube')).toEqual([1,8,27]);
     });
 
+    it('Map of Array with Object',() => {
+        expect(user.mapFunction([{ x : 10}],a => a.x + 1)).toEqual([11]);
+    });
+
 })

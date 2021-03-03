@@ -7,6 +7,7 @@ const mapFunction = (array,functionName) => {
     {
         return array.map(findIdentity);
     }
+    return array.map(functionName);
 }
 
 function findCube(num)
