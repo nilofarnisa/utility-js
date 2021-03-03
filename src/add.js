@@ -1,4 +1,9 @@
 const add = (first,second) => {
     return first + second;   
 }
-module.exports = add;
+
+const head = (array) => {
+    return array[0];
+}
+module.exports.add = add;
+module.exports.head = head;
