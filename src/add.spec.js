@@ -12,10 +12,18 @@ describe('Add', () => {
 
     it('Head of Empty Array is null', () => {
         expect(user.head([])).toEqual(undefined);
-    })
+    });
 
     it('Head of Array is 1', () => {
         expect(user.head([1,2,3])).toEqual(1);
-    })
+    });
+
+    it('Tail of Empty Array is null', () => {
+        expect(user.tail([])).toEqual([]);
+    });
+
+    it('Tail of Array is 2,3', () => {
+        expect(user.tail([1,2,3])).toEqual([2,3]);
+    });
 
 })
