@@ -26,4 +26,12 @@ describe('Add', () => {
         expect(user.tail([1,2,3])).toEqual([2,3]);
     });
 
+    it('Minimum Element is 1', () => {
+        expect(user.minimum([1,2,3,4],4)).toEqual(1);
+    });
+
+    it('Maximum Element is 4', () => {
+        expect(user.maximum([1,2,3,4],4)).toEqual(4);
+    });
+
 })
